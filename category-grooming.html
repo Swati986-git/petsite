@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Grooming - Pet Clinic</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="PawsomeClinic Logo">
+                    <h1>PawsomeClinic</h1>
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Our Doctors</a></li>
+                <li><a href="products.html" class="active">Pet Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#" class="btn-small btn-login">Login</a>
+                <a href="#" class="btn-small btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner" style="background-image: url('images/product-banner.jpg');">
+        <div class="overlay" style="background: linear-gradient(135deg, rgba(0, 184, 212, 0.85), rgba(0, 136, 163, 0.9));"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-shower"></i>
+                    <span>Clean & Fresh</span>
+                </div>
+                <h1>Pet Grooming</h1>
+                <p>Premium grooming products to keep your pets looking and feeling their best</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-large">Shop Now</a>
+                    <a href="products.html" class="btn btn-outline btn-large">View All Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Products Layout with Sidebar -->
+    <section class="products-with-sidebar">
+        <div class="container">
+            <div class="products-layout">
+                <!-- Sidebar with Categories -->
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                        <h3>Categories</h3>
+                    </div>
+                    <div class="sidebar-categories">
+                        <ul class="category-list">
+                            <li><a href="products.html"><i class="fas fa-star"></i> Featured</a></li>
+                            <li><a href="category-food.html"><i class="fas fa-drumstick-bite"></i> Pet Food</a></li>
+                            <li><a href="category-toys.html"><i class="fas fa-baseball-ball"></i> Toys</a></li>
+                            <li><a href="category-accessories.html"><i class="fas fa-paw"></i> Accessories</a></li>
+                            <li class="active"><a href="category-grooming.html"><i class="fas fa-shower"></i> Grooming</a></li>
+                            <li><a href="category-health.html"><i class="fas fa-heartbeat"></i> Health & Wellness</a></li>
+                        
+                        </ul>
+                    </div>
+                    <div class="sidebar-filter">
+                        <div class="sidebar-header">
+                            <h3>Filter By</h3>
+                        </div>
+                        <div class="price-filter">
+                            <h4>Price Range</h4>
+                            <div class="price-inputs">
+                                <input type="range" min="0" max="10000" value="5000" class="price-slider">
+                                <div class="price-range-values">
+                                    <span>₹0</span>
+                                    <span>₹10,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rating-filter">
+                            <h4>Rating</h4>
+                            <div class="rating-options">
+                                <label><input type="checkbox"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> & up</label>
+                                <label><input type="checkbox"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> & up</label>
+                                <label><input type="checkbox"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> & up</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Products Area -->
+                <div class="main-products">
+                    <div class="section-header">
+                        <h2>Pet Grooming Products</h2>
+                        <p>Keep your pets clean, healthy, and looking their best</p>
+                    </div>
+                    <div class="products-grid">
+                        <!-- Grooming Category Products -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/petshampoo.jpeg" alt="Pet Shampoo">
+                                <div class="product-actions">
+                                    <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-wishlist"><i class="fas fa-heart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">Bath Essentials</span>
+                                <h3>Premium Pet Shampoo</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(48)</span>
+                                </div>
+                                <p class="product-description">Gentle formula for sensitive skin.</p>
+                                <div class="product-price">899</div>
+                                <a href="#" class="btn-small">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/brush.jpeg" alt="Grooming Brush">
+                                <div class="product-tag">Best Seller</div>
+                                <div class="product-actions">
+                                    <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-wishlist"><i class="fas fa-heart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">Grooming Tools</span>
+                                <h3>De-shedding Brush</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(36)</span>
+                                </div>
+                                <p class="product-description">Reduces shedding by up to 90%.</p>
+                                <div class="product-price">1,299</div>
+                                <a href="#" class="btn-small">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/dog-nail-clipper.jpeg" alt="Nail Clippers">
+                                <div class="product-actions">
+                                    <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-wishlist"><i class="fas fa-heart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">Grooming Tools</span>
+                                <h3>Professional Nail Clippers</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(27)</span>
+                                </div>
+                                <p class="product-description">Safe and easy nail trimming at home.</p>
+                                <div class="product-price">799</div>
+                                <a href="#" class="btn-small">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/product-3.jpg" alt="Grooming Kit">
+                                <div class="product-actions">
+                                    <a href="#" class="quick-view"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="add-wishlist"><i class="fas fa-heart"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">Grooming Sets</span>
+                                <h3>Complete Grooming Kit</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(42)</span>
+                                </div>
+                                <p class="product-description">All essential tools for home grooming.</p>
+                                <div class="product-price">2,999</div>
+                                <a href="#" class="btn-small">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get updates on new products, special offers, and pet care tips.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="PawsomeClinic Logo">
+                    <h2>PawsomeClinic</h2>
+                    <p>Your pet's health is our priority</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html#checkup-details">Regular Check-ups</a></li>
+                        <li><a href="services.html#vaccination-details">Vaccination</a></li>
+                        <li><a href="services.html#grooming-details">Grooming</a></li>
+                        <li><a href="services.html#surgery-details">Surgery</a></li>
+                        <li><a href="services.html#dental-details">Dental Care</a></li>
+                        <li><a href="services.html#boarding-details">Boarding</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and pet care tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit" class="btn-small">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PawsomeClinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - PawsomeClinic</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="PawsomeClinic Logo">
+                    <h1>PawsomeClinic</h1>
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="doctors.html">Our Doctors</a></li>
+                <li><a href="products.html">Pet Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#" class="btn-small btn-login">Login</a>
+                <a href="#" class="btn-small btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="about-hero services-hero">
+        <div class="about-hero-overlay"></div>
+        <div class="container">
+            <div class="about-hero-content">
+                <h1>Our Services</h1>
+                <p>Comprehensive care for all your pet's needs</p>
+                <div class="hero-badges">
+                    <div class="hero-badge">
+                        <i class="fas fa-stethoscope"></i>
+                        <span>Health Check-ups</span>
+                    </div>
+                    <div class="hero-badge">
+                        <i class="fas fa-syringe"></i>
+                        <span>Vaccinations</span>
+                    </div>
+                    <div class="hero-badge">
+                        <i class="fas fa-cut"></i>
+                        <span>Grooming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <div class="checkup-booking-section">
+            <h3>Book Your Pet's Appointment</h3>
+            <p>Schedule an appointment for your pet using the form below</p>
+
+            <div class="inline-booking-form">
+                <form id="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="owner-name">Your Name</label>
+                            <input type="text" id="owner-name" name="owner-name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="owner-phone">Your Phone</label>
+                            <input type="tel" id="owner-phone" name="owner-phone" placeholder="+91 98765 43210" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pet-name">Pet's Name</label>
+                            <input type="text" id="pet-name" name="pet-name" placeholder="Your pet's name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pet-type">Pet Type</label>
+                            <select id="pet-type" name="pet-type" required>
+                                <option value="">Select pet type</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="bird">Bird</option>
+                                <option value="reptile">Reptile</option>
+                                <option value="small-mammal">Small Mammal</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-type">Service Type</label>
+                            <select id="service-type" name="service-type" required>
+                                <option value="">Select service type</option>
+                                <option value="checkup">Regular Check-up</option>
+                                <option value="vaccination">Vaccination</option>
+                                <option value="grooming">Grooming</option>
+                                <option value="dental">Dental Care</option>
+                                <option value="surgery">Surgery Consultation</option>
+                                <option value="boarding">Boarding</option>
+                                <option value="diagnostics">Diagnostics</option>
+                                <option value="specialty">Specialty Care</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="checkup-type-group">
+                            <label for="checkup-type">Check-up Package</label>
+                            <select id="checkup-type" name="checkup-type">
+                                <option value="">Select package (if applicable)</option>
+                                <option value="basic">Basic Check-up</option>
+                                <option value="standard">Standard Check-up</option>
+                                <option value="comprehensive">Comprehensive Check-up</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appointment-date">Preferred Date</label>
+                            <input type="date" id="appointment-date" name="appointment-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment-time">Preferred Time</label>
+                            <select id="appointment-time" name="appointment-time" required>
+                                <option value="">Select time</option>
+                                <option value="morning">Morning (9 AM - 12 PM)</option>
+                                <option value="afternoon">Afternoon (12 PM - 3 PM)</option>
+                                <option value="evening">Evening (3 PM - 6 PM)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="special-notes">Special Notes</label>
+                            <textarea id="special-notes" name="special-notes" placeholder="Any special requirements or concerns"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">Book Appointment</button>
+                </form>
+
+                <div class="service-details-list" id="checkup-details-list">
+                    <h4>Check-up Services Included:</h4>
+                    <div class="service-details-columns">
+                        <div class="service-column">
+                            <h5>Basic Check-up</h5>
+                            <ul>
+                                <li>Physical examination</li>
+                                <li>Weight check</li>
+                                <li>Temperature check</li>
+                                <li>Basic health assessment</li>
+                                <li>Dietary recommendations</li>
+                            </ul>
+                            <p class="price">₹800</p>
+                        </div>
+
+                        <div class="service-column">
+                            <h5>Standard Check-up</h5>
+                            <ul>
+                                <li>All Basic Check-up services</li>
+                                <li>Blood pressure measurement</li>
+                                <li>Eye and ear examination</li>
+                                <li>Dental check</li>
+                                <li>Parasite screening</li>
+                            </ul>
+                            <p class="price">₹1,500</p>
+                        </div>
+
+                        <div class="service-column">
+                            <h5>Comprehensive Check-up</h5>
+                            <ul>
+                                <li>All Standard Check-up services</li>
+                                <li>Blood work</li>
+                                <li>Urinalysis</li>
+                                <li>X-rays if needed</li>
+                                <li>Comprehensive health report</li>
+                            </ul>
+                            <p class="price">₹3,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-details-list" id="vaccination-details-list" style="display: none;">
+                    <h4>Vaccination Services:</h4>
+                    <div class="service-details-columns">
+                        <div class="service-column">
+                            <h5>Core Vaccines (Dogs)</h5>
+                            <ul>
+                                <li>Rabies</li>
+                                <li>Distemper</li>
+                                <li>Parvovirus</li>
+                                <li>Adenovirus</li>
+                            </ul>
+                            <p class="price">₹2,500 (package)</p>
+                        </div>
+
+                        <div class="service-column">
+                            <h5>Core Vaccines (Cats)</h5>
+                            <ul>
+                                <li>Rabies</li>
+                                <li>Feline Distemper (Panleukopenia)</li>
+                                <li>Feline Calicivirus</li>
+                                <li>Feline Herpesvirus</li>
+                            </ul>
+                            <p class="price">₹2,200 (package)</p>
+                        </div>
+
+                        <div class="service-column">
+                            <h5>Non-Core Vaccines</h5>
+                            <ul>
+                                <li>Bordetella (Kennel Cough)</li>
+                                <li>Leptospirosis</li>
+                                <li>Lyme Disease</li>
+                                <li>Feline Leukemia</li>
+                            </ul>
+                            <p class="price">₹800 - ₹1,200 each</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-details-list" id="grooming-details-list" style="display: none;">
+                    <h4>Grooming Services:</h4>
+                    <div class="service-details-columns">
+                        <div class="service-column">
+                            <h5>Basic Grooming</h5>
+                            <ul>
+                                <li>Bath with premium shampoo</li>
+                                <li>Blow dry</li>
+                                <li>Brush out</li>
+                                <li>Nail trimming</li>
+                                <li>Ear cleaning</li>
+                            </ul>
+                            <p class="price">₹1,000 - ₹1,800</p>
+                        </div>
+
+                        <div class="service-column">
+                            <h5>Full Grooming</h5>
+                            <ul>
+                                <li>All Basic Grooming services</li>
+                                <li>Haircut/styling</li>
+                                <li>Teeth brushing</li>
+                                <li>Anal gland expression</li>
+                                <li>Paw pad trimming</li>
+                            </ul>
+                            <p class="price">₹1,800 - ₹3,000</p>
+                        </div>
+
+                        <div class="service-column">
+                            <h5>Specialty Grooming</h5>
+                            <ul>
+                                <li>Breed-specific styling</li>
+                                <li>De-shedding treatment</li>
+                                <li>Flea/tick treatment</li>
+                                <li>Medicated baths</li>
+                                <li>Coat conditioning</li>
+                            </ul>
+                            <p class="price">₹2,500 - ₹4,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services List Section -->
+    <section class="services-list">
+        <div class="container">
+            <div class="section-header">
+                <h2>What We Offer</h2>
+                <p>Comprehensive care for your pet's health and happiness</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Regular Check-ups</h3>
+                    <p>Comprehensive physical examinations to ensure your pet's health and detect issues early.</p>
+                    <a href="#checkup-details" class="btn-small">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Vaccination</h3>
+                    <p>Essential vaccines to protect your pet against common and serious diseases.</p>
+                    <a href="#vaccination-details" class="btn-small">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Grooming</h3>
+                    <p>Professional grooming services to keep your pet clean, healthy, and looking their best.</p>
+                    <a href="#grooming-details" class="btn-small">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>Dental Care</h3>
+                    <p>Comprehensive dental services to maintain your pet's oral health and prevent disease.</p>
+                    <a href="#dental-details" class="btn-small">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <h3>Surgery</h3>
+                    <p>Advanced surgical procedures performed by our experienced veterinary surgeons.</p>
+                    <a href="#surgery-details" class="btn-small">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Boarding</h3>
+                    <p>Safe and comfortable accommodation for your pet while you're away.</p>
+                    <a href="#boarding-details" class="btn-small">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Diagnostics</h3>
+                    <p>Advanced diagnostic testing including blood work, x-rays, and ultrasounds.</p>
+                    <a href="#diagnostics-details" class="btn-small">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3>Specialty Care</h3>
+                    <p>Specialized treatments for complex conditions and chronic diseases.</p>
+                    <a href="#specialty-details" class="btn-small">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Sections -->
+    <section id="checkup-details" class="service-details">
+        <div class="container">
+            <div class="section-header">
+                <h2>Regular Check-ups</h2>
+                <p>Preventive care for a healthy pet</p>
+            </div>
+
+            <div class="service-details-content">
+                <div class="service-details-text">
+                    <h3>Why Regular Check-ups Matter</h3>
+                    <p>Regular check-ups are essential for maintaining your pet's health and detecting potential issues before they become serious. Our veterinarians recommend bi-annual wellness exams for most pets, and more frequent visits for senior pets
+                        or those with chronic conditions.</p>
+                    <p>During a check-up, our veterinarians will thoroughly examine your pet from nose to tail, checking for any abnormalities or signs of illness. We'll also discuss your pet's diet, exercise routine, and behavior to ensure they're living
+                        their healthiest life.</p>
+                    <h3>What to Expect</h3>
+                    <p>During your pet's check-up appointment, our veterinarian will:</p>
+                    <ul>
+                        <li>Check your pet's weight and vital signs</li>
+                        <li>Examine eyes, ears, mouth, and teeth</li>
+                        <li>Listen to heart and lungs</li>
+                        <li>Palpate abdomen and lymph nodes</li>
+                        <li>Assess skin and coat condition</li>
+                        <li>Evaluate joint health and mobility</li>
+                        <li>Discuss any concerns you may have</li>
+                    </ul>
+                    <p>Based on your pet's age, breed, and health history, we may recommend additional screenings or preventive care measures.</p>
+                </div>
+                <div class="service-details-image">
+                    <img src="images/checkup.jpg" alt="Veterinarian examining a dog">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="PawsomeClinic Logo">
+                    <h2>PawsomeClinic</h2>
+                    <p>Your pet's health is our priority</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html#checkup-details">Regular Check-ups</a></li>
+                        <li><a href="services.html#vaccination-details">Vaccination</a></li>
+                        <li><a href="services.html#grooming-details">Grooming</a></li>
+                        <li><a href="services.html#surgery-details">Surgery</a></li>
+                        <li><a href="services.html#dental-details">Dental Care</a></li>
+                        <li><a href="services.html#boarding-details">Boarding</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and pet care tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit" class="btn-small">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PawsomeClinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for booking your pet\'s appointment! We will contact you shortly to confirm your appointment details.');
+            this.reset();
+        });
+
+        // Show/hide service details based on selected service type
+        document.getElementById('service-type').addEventListener('change', function() {
+            // Hide all service details lists
+            const detailsLists = document.querySelectorAll('.service-details-list');
+            detailsLists.forEach(list => {
+                list.style.display = 'none';
+            });
+
+            // Show the selected service details list
+            const selectedService = this.value;
+            if (selectedService === 'checkup') {
+                document.getElementById('checkup-details-list').style.display = 'block';
+                document.getElementById('checkup-type-group').style.display = 'block';
+            } else if (selectedService === 'vaccination') {
+                document.getElementById('vaccination-details-list').style.display = 'block';
+                document.getElementById('checkup-type-group').style.display = 'none';
+            } else if (selectedService === 'grooming') {
+                document.getElementById('grooming-details-list').style.display = 'block';
+                document.getElementById('checkup-type-group').style.display = 'none';
+            } else {
+                document.getElementById('checkup-type-group').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
